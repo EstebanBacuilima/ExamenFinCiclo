@@ -1,4 +1,7 @@
 package com.examen.esteban.Service;
 
-public interface EntidadService {
+import com.examen.esteban.Models.Asignatura;
+
+public interface EntidadService extends GenericService<Asignatura, Long>{
 }
+
