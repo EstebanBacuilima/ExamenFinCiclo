@@ -1,0 +1,18 @@
+use('db_examen_interciclo');
+
+//  db.asignatura.find();
+
+// 1.Mostrar todas las asignaturas de la carrera de Software:
+// db.asignatura.find({"profesorList.cicloList.carreraList.nombre": "SOFTWARE"})
+
+
+// 2.Mostrar todas las asignaturas impartidas por el profesor con cédula "0105957922"
+// db.asignatura.find({"profesorList.cedula": "0105957922"})
+
+// 3.Mostrar todas las asignaturas que se imparten en el ciclo "M5B" y en el período matutino del año 2023
+// db.asignatura.find({"profesorList.cicloList.nombre": "M5B", "profesorList.cicloList.carreraList.periodoList.periodo": "MATUTINO", "profesorList.cicloList.carreraList.periodoList.year": 2023})
+
+
+// 4.Mostrar todas las asignaturas que tienen más de 300 horas totales
+// db.asignatura.find({"n_horas": {$gt: 300}})
+
